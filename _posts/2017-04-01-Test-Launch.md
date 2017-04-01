@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
+title: "Binayak's test site launch"
 date: 2017-04-01
 ---
 
