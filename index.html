@@ -6,3 +6,21 @@ title: Binayak's Test Site
 	<h1>Hi there, Binayak!</h1>
 	<p>All this is new to me. So please be patient while I figure all this out. <a href="/about">Read more about my life...</a></p>
 </div><!-- /.blurb -->
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="date">
+         {{ post.date | date: "%B %e, %Y" }}
+       </div>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
